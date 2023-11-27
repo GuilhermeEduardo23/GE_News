@@ -5,19 +5,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="Breve descrição do projeto">
+        <meta name="GE News" content="Site de notícias">
         <meta name="author" content="Seu nome">
 
         <!-- Styles CSS -->
-        <link rel="stylesheet" href="./assets/styles/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+        <!-- Ícone da Página -->
+        <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 
         <!-- Scripts JS -->
-        <script src="./scripts/main.js" defer></script>
+        <script src="./scripts/WeatherService.js" defer></script>
 
-        <title>Título do Projeto</title>
+        <title>GE News</title>
     </head>
 
     <body>
-        
+        <header class="header">
+            <span id="tempo"></span>
+            <a href="index.html"><img id="img" src="./assets/images/logo.png" alt="Logo GE News"></a>
+            <span id="data_hora">Boa tarde! 27/11/2023 - 13h01</span>
+        </header>
+
+        <main class="main">
+            <section class="sections">
+                <h1 class="titulo">Título da Notícia</h1>
+                <h2 class="autor">Autor da Notícia</h2>
+                <a class="link" href="#" target="_blank">Link da Notícia</a>
+            </section>
+        </main>
     </body>
 </html>

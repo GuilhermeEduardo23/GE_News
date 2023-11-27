@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 80px;
+    flex-wrap: wrap;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+}
+
+#tempo, #img, #data_hora {
+    @extend .header;
+    box-shadow: none;
+    padding: 0;
+}
