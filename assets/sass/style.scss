@@ -5,13 +5,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@import './header.scss';
+@import './notices.scss';
+@import './variables.scss';
+
 body {
     min-height: 100vh;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background: $blue;
 }
-
-@import './header.scss';
-@import './notices.scss';

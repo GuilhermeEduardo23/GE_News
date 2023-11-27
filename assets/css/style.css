@@ -5,14 +5,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  min-height: 100vh;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .header, #tempo, #img, #data_hora {
   display: flex;
   align-items: center;
@@ -31,6 +23,29 @@ body {
 
 .main {
   padding: 0 1rem;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.main.sections {
+  margin: 10px 0;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  justify-content: space-around;
+}
+
+body {
+  min-height: 100vh;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #D2E0FB;
 }
 
 /*# sourceMappingURL=style.css.map */
