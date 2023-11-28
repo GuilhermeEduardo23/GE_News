@@ -19,4 +19,4 @@ const showDateTime = () => {
     dateTime.innerText = `${greetings}! ${day}/${month}/${year} - ${hour}:${minute}`;
 }
 
-showDateTime();
+setInterval(showDateTime(), 60000);
