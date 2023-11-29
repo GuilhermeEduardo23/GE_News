@@ -2,7 +2,6 @@
 
 .main {
     padding: 0 1rem;
-    border: 1px solid $black;
     display: flex;
     justify-content: space-between;
     margin: 0 10px;
@@ -13,8 +12,26 @@
         margin: 10px 0;
         flex-direction: column;
         align-items: center;
-        width: 300px;
+        width: 400px;
         height: 300px;
         justify-content: space-around;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: .5s;
+        background: #ffffff8c;
+        border-radius: 10px;
+        text-align: center;
+
+        &:hover {
+            background: darken($color: #a3a1a146, $amount: 50%);
+        }
+    }
+}
+
+.link {
+    text-decoration: none;
+    transition: .5s;
+
+    &:hover {
+        letter-spacing: 2px;
     }
 }

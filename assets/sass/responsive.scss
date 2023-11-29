@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+    .header {
+        justify-content: center;
+    }
+    
+    #tempo, #data_hora {
+        display: none;
+    }
+}

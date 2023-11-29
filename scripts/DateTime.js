@@ -17,6 +17,13 @@ const showDateTime = () => {
     if(minute < 10) minute = '0' + minute;
 
     dateTime.innerText = `${greetings}! ${day}/${month}/${year} - ${hour}:${minute}`;
+
+    if(hour >= 19 && hour <= 6) {
+        const principal = document.querySelector('.main');
+        principal.classList.toggle('dark');
+    } else {
+        
+    }
 }
 
-setInterval(showDateTime(), 60000);
+showDateTime();

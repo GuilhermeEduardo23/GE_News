@@ -8,6 +8,7 @@
 @import './header.scss';
 @import './notices.scss';
 @import './variables.scss';
+@import './responsive.scss';
 
 body {
     min-height: 100vh;
@@ -16,4 +17,9 @@ body {
     flex-direction: column;
     gap: 2rem;
     background: $blue;
+}
+
+.dark {
+    background: #161A30;
+    color: $white;
 }
