@@ -10,7 +10,7 @@ navigator.geolocation.getCurrentPosition(function (userPosition) {
 })
 
 async function showTemperature(lat, lon) {
-    const key = 'faf304ef7610279db0789696dbc57421';
+    const key = 'Sua Key';
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric&lang=pt_br`;
     
     try {
