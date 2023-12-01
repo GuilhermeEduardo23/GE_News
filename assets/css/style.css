@@ -56,14 +56,42 @@
   border-bottom: 1px solid #000;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .header, #tempo, #img, #data_hora {
-    justify-content: center;
+    justify-content: space-between;
   }
-  #tempo, #data_hora {
+  .header#data_hora, #data_hora {
     display: none;
   }
+  .main {
+    justify-content: center;
+  }
+  .main.sections {
+    width: 80%;
+  }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    justify-content: center;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #D2E0FB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(35, 34, 34, 0.2745098039);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2745098039);
+}
+
 body {
   min-height: 100vh;
   flex-wrap: wrap;

@@ -1,9 +1,25 @@
-@media (max-width: 480px) {
+//Mobile
+@media(min-width: 320px) and (max-width: 767px) {
     .header {
-        justify-content: center;
+        justify-content: space-between;
+
+        &#data_hora{
+            display: none;
+        }
     }
-    
-    #tempo, #data_hora {
-        display: none;
+
+    .main {
+        justify-content: center;
+
+        &.sections {
+            width: 80%;
+        }
+    }
+}
+
+//Tablet
+@media(min-width: 768px) and (max-width: 1024px) {
+    .main {
+        justify-content: center;
     }
 }

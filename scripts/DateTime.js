@@ -10,7 +10,7 @@ const showDateTime = () => {
 
     /* Greetings */
     if(hour >= 0 && hour <= 11) greetings = 'Bom dia';
-    else if(hour >= 12 && hour <= 18) greetings = 'Boa tarde';
+    else if(hour >= 12 && hour < 18) greetings = 'Boa tarde';
     else greetings = 'Boa noite';
 
     if(day < 10) day = '0' + day;
