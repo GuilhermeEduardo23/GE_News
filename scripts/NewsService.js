@@ -1,14 +1,17 @@
 const container = document.querySelector('.main');
 
 async function showNotices() {  
-    //const key = 'e4590769245f4569b9e9dc8e3cec6eb8';
-    const url = `https://newsapi.org/v2/top-headlines?country=br&apiKey=e4590769245f4569b9e9dc8e3cec6eb8`;
+    const key = 'e4590769245f4569b9e9dc8e3cec6eb8';
+    const url = `http://newsapi.org/v2/top-headlines?country=br&apiKey=${key}`;
 
     try {
         const response = await fetch(url);
         let data = await response.json();
         let {articles} = data;
-        console.log(articles);
+
+        if(response.status === 426 || response.status === 327) {
+            document.write('No momento o GE News está em manutenção! Voltaremos em breve.');
+        }
 
         articles.map(item => {
             let noticias = document.createElement('section');
@@ -25,7 +28,6 @@ async function showNotices() {
         })
     } catch (error) {
         console.log(error);
-        noticias.innerText = error;
     }
 }
 
