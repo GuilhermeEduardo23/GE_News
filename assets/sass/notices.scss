@@ -27,12 +27,15 @@
     }
 }
 
+.titulo {
+    font-size: 1.2rem;
+}
+
 .link {
     text-decoration: none;
-    transition: .5s;
+    transition: 2s;
 
     &:hover {
-        letter-spacing: 2px;
         border-bottom: 1px solid $black;
     }
 }
