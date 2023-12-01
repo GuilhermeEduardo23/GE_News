@@ -1,7 +1,7 @@
 const showDateTime = () => {
     const dateTime = document.getElementById('data_hora');
     const date = new Date();
-    const day = date.getDate();
+    let day = date.getDate();
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
     let hour = date.getHours();
@@ -13,17 +13,11 @@ const showDateTime = () => {
     else if(hour >= 12 && hour <= 18) greetings = 'Boa tarde';
     else greetings = 'Boa noite';
 
+    if(day < 10) day = '0' + day;
     if(hour < 10) hour = '0' + hour;
     if(minute < 10) minute = '0' + minute;
 
     dateTime.innerText = `${greetings}! ${day}/${month}/${year} - ${hour}:${minute}`;
-
-    if(hour >= 19 && hour <= 6) {
-        const principal = document.querySelector('.main');
-        principal.classList.toggle('dark');
-    } else {
-        
-    }
 }
 
 showDateTime();

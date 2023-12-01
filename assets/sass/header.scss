@@ -6,10 +6,13 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 0 1rem;
     font-size: 1.3rem;
+    background: #ffffff8c;
 }
+
 
 #tempo, #img, #data_hora {
     @extend .header;
     box-shadow: none;
     padding: 0;
+    background: transparent;
 }

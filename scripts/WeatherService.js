@@ -6,7 +6,7 @@ navigator.geolocation.getCurrentPosition(function (userPosition) {
 
     showTemperature(latitude, longitude);
 }, function (error) {
-    temperatura.innerText = 'Tempo no momento indisponível!';
+    temperatura.innerText = 'Tempo indisponível!';
 })
 
 async function showTemperature(lat, lon) {

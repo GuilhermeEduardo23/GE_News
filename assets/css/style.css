@@ -13,11 +13,13 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 0 1rem;
   font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.5490196078);
 }
 
 #tempo, #img, #data_hora {
   box-shadow: none;
   padding: 0;
+  background: transparent;
 }
 
 .main {
@@ -51,6 +53,7 @@
 }
 .link:hover {
   letter-spacing: 2px;
+  border-bottom: 1px solid #000;
 }
 
 @media (max-width: 480px) {
@@ -68,11 +71,6 @@ body {
   flex-direction: column;
   gap: 2rem;
   background: #D2E0FB;
-}
-
-.dark {
-  background: #161A30;
-  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
