@@ -1,0 +1,19 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header#data_hora {
+    display: none;
+  }
+  .main {
+    justify-content: center;
+  }
+  .main.sections {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=responsive.css.map */

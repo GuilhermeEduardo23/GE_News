@@ -2,7 +2,7 @@ const showDateTime = () => {
     const dateTime = document.getElementById('data_hora');
     const date = new Date();
     let day = date.getDate();
-    const month = date.getMonth() + 1;
+    let month = date.getMonth() + 1;
     const year = date.getFullYear();
     let hour = date.getHours();
     let minute = date.getMinutes();
@@ -16,6 +16,7 @@ const showDateTime = () => {
     if(day < 10) day = '0' + day;
     if(hour < 10) hour = '0' + hour;
     if(minute < 10) minute = '0' + minute;
+    if(month < 10) month = '0' + month;
 
     dateTime.innerText = `${greetings}! ${day}/${month}/${year} - ${hour}:${minute}`;
 }

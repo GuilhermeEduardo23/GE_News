@@ -1,7 +1,9 @@
+require('dotenv').config();
+
 const container = document.querySelector('.main');
 
 async function showNotices() {  
-    const key = 'Sua Key';
+    const key = process.env.API_KEY_NEWS;
     const url = `https://newsapi.org/v2/top-headlines?country=br&apiKey=${key}`;
 
     try {

@@ -1,0 +1,16 @@
+.header, #tempo, #img, #data_hora {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.5490196078);
+}
+
+#tempo, #img, #data_hora {
+  box-shadow: none;
+  padding: 0;
+  background: transparent;
+}/*# sourceMappingURL=header.css.map */
