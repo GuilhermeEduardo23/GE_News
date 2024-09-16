@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 let temperatura = document.getElementById('tempo');
 
 navigator.geolocation.getCurrentPosition(function (userPosition) {
@@ -12,7 +10,7 @@ navigator.geolocation.getCurrentPosition(function (userPosition) {
 })
 
 async function showTemperature(lat, lon) {
-    const api = process.env.API_KEY_WEATHER;
+    const api = faf304ef7610279db0789696dbc57421;
 
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}&units=metric&lang=pt_br`;
     
