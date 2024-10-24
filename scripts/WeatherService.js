@@ -10,14 +10,14 @@ navigator.geolocation.getCurrentPosition(function (userPosition) {
 })
 
 async function showTemperature(lat, lon) {
-    const api = faf304ef7610279db0789696dbc57421;
+    const api = 'faf304ef7610279db0789696dbc57421';
 
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}&units=metric&lang=pt_br`;
     
     try {
         const response = await fetch(url);
         const data = await response.json();
-
+        
         const {weather, name} = data;
         const description = weather[0].description.toUpperCase();
         const temperature = parseInt(data.main.temp);

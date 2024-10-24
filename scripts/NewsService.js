@@ -1,9 +1,9 @@
 const container = document.querySelector('.main');
 
 async function showNotices() {  
-    const key = e4590769245f4569b9e9dc8e3cec6eb8;
-    const url = `https://newsapi.org/v2/top-headlines?country=br&apiKey=${key}`;
-
+    const key = 'e4590769245f4569b9e9dc8e3cec6eb8';
+    const url = `https://newsapi.org/v2/top-headlines/sources?language=pt&apiKey=${key}`;
+console.log(url);
     try {
         const response = await fetch(url);
         let data = await response.json();
